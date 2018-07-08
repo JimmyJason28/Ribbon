@@ -23,7 +23,7 @@ module.exports = class UserInfoCommand extends Command {
       aliases: ['user', 'uinfo'],
       description: 'Gets information about a user.',
       format: 'MemberID|MemberName(partial or full)',
-      examples: ['uinfo Favna'],
+      examples: ['uinfo Jimmy'],
       guildOnly: true,
       throttling: {
         usages: 2,
