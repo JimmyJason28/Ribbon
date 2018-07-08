@@ -34,17 +34,20 @@ module.exports = class InviteCommand extends Command {
     const inviteEmbed = new MessageEmbed();
 
     inviteEmbed
-      .setTitle('Ribbon by Favna')
-      .setThumbnail('https://favna.xyz/images/appIcons/ribbon.png')
-      .setURL('https://favna.xyz/ribbon')
+      .setTitle('Clara by Jimmy')
+      .setThumbnail('https://cdn.discordapp.com/avatars/465010060284788746/106257a13ac02bfa1df5c892a8a1ce43.png?size=2048')
+      //.setURL('https://favna.xyz/ribbon')
       .setColor(msg.guild ? msg.guild.me.displayHexColor : '#7CFC00')
       .setDescription(stripIndents`Enrich your Discord server with a fully modular Discord bot with many many commands\n
-        [Add me to your server](https://favna.xyz/redirect/ribbon)
-        [Join the Support Server](https://favna.xyz/redirect/server)
-        [Website](https://favna.xyz/ribbon)
-        [GitHub](https://github.com/Favna/Ribbon)
-        [Wiki](https://github.com/Favna/Ribbon/wiki)
-        `);
+        [Add me to your server](https://discordapp.com/oauth2/authorize?client_id=465010060284788746&scope=bot&permissions=8)
+        [Join the Support Server](https://discord.gg/4eMsYmx)
+ `);
+       
+
+
+
+
+       
 
     deleteCommandMessages(msg, this.client);
     stopTyping(msg);
