@@ -94,7 +94,7 @@ const guildAdd = async function (client, guild) {
     newGuildEmbed
       .attachFiles([embedAttachment])
       .setColor('#80F31F')
-      .setTitle('Ribbon is here!')
+      .setTitle('Clara is here!')
       .setDescription(stripIndents`
       I'm an all-purpose bot and I hope I can make your server better!
       I've got many commands, you can see them all by using \`${client.commandPrefix}help\`
