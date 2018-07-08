@@ -16,7 +16,7 @@ class Ribbon {
   constructor (token) {
     this.token = token;
     this.client = new Client({
-      commandPrefix: '!',
+      commandPrefix: 'c!',
       owner: '112001393140723712',
       selfbot: false,
       unknownCommandResponse: false,
@@ -24,16 +24,16 @@ class Ribbon {
         status: 'online',
         activity: {
           application: '376520643862331396',
-          name: '@Ribbon help',
+          name: '@Clara help',
           type: 'WATCHING',
-          details: 'Made by Favna',
-          state: 'https://favna.xyz/ribbon',
+          details: 'Made by Jimmy',
+         /* state: 'https://favna.xyz/ribbon',
           assets: {
             largeImage: '385133227997921280',
             smallImage: '385133144245927946',
             largeText: 'Invite me to your server!',
             smallText: 'https://favna.xyz/redirect/ribbon'
-          }
+          }*/
         }
       }
     });
