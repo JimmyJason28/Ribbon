@@ -52,6 +52,6 @@ module.exports = class InviteCommand extends Command {
     deleteCommandMessages(msg, this.client);
     stopTyping(msg);
 
-    return msg.embed(inviteEmbed, 'Find information on the bot here: https://favna.xyz/ribbon');
+    return msg.embed(inviteEmbed 'Need help with the bot? Join our support server to get help. Just click **Join the Support Server to join.');
   }
 };
