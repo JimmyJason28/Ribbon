@@ -21,7 +21,7 @@ module.exports = class JoinMessagesCommand extends Command {
       memberName: 'joinmessages',
       group: 'moderation',
       aliases: ['jmt', 'joinmessagestoggle'],
-      description: 'Toggle whether Ribbon should send special greeting messages when members join',
+      description: 'Toggle whether Clara should send special greeting messages when members join',
       format: 'BooleanResolvable [Channel]',
       examples: ['joinmessages enable'],
       guildOnly: true,
@@ -66,7 +66,7 @@ module.exports = class JoinMessagesCommand extends Command {
 
     startTyping(msg);
     const defRoleEmbed = new MessageEmbed(),
-      description = option ? '📈 Ribbon join messages have been enabled' : '📈 Ribbon join messages have been disabled',
+      description = option ? '📈 Clara join messages have been enabled' : '📈 Clara join messages have been disabled',
       modlogChannel = msg.guild.settings.get('modlogchannel',
         msg.guild.channels.find(c => c.name === 'mod-logs') ? msg.guild.channels.find(c => c.name === 'mod-logs').id : null);
 
