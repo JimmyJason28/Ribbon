@@ -17,13 +17,13 @@ class Ribbon {
     this.token = token;
     this.client = new Client({
       commandPrefix: 'c!',
-      owner: '112001393140723712',
+      owner: '402316460325601292',
       selfbot: false,
       unknownCommandResponse: false,
       presence: {
         status: 'online',
         activity: {
-          application: '376520643862331396',
+          application: '465010060284788746',
           name: '@Clara help',
           type: 'WATCHING',
           details: 'Made by Jimmy',
