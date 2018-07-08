@@ -23,7 +23,7 @@ module.exports = class RibbonStatsCommand extends Command {
       memberName: 'stats',
       group: 'info',
       aliases: ['botinfo', 'info'],
-      description: 'Gets statistics about Ribbon',
+      description: 'Gets statistics about Clara',
       examples: ['stats'],
       guildOnly: false,
       throttling: {
@@ -54,7 +54,7 @@ module.exports = class RibbonStatsCommand extends Command {
 
     statsEmbed
       .setColor(msg.guild ? msg.guild.me.displayHexColor : '#7CFC00')
-      .setAuthor('Ribbon Bot Stats', 'https://favna.xyz/images/appIcons/ribbon.png')
+      .setAuthor('Clara Bot Stats',)
       .addField('Guilds', this.client.guilds.size, true)
       .addField('Channels', this.client.channels.size, true)
       .addField('Users', this.client.users.size, true)
@@ -64,15 +64,15 @@ module.exports = class RibbonStatsCommand extends Command {
       .addField('NodeJS', process.version, true)
       .addField('Platform', this.fetchPlatform(process.platform.toLowerCase()), true)
       .addField('Memory Usage', `${roundNumber(process.memoryUsage().heapUsed / 10485.76) / 100} MB`, true)
-      .addField('Invite Me', '[Click Here](https://favna.xyz/redirect/ribbon)', true)
-      .addField('Source', '[Available on GitHub](https://github.com/favna/ribbon)', true)
-      .addField('Support', '[Server Invite](https://favna.xyz/redirect/server)', true)
+      .addField('Invite Me', '[Click Here](https://discordapp.com/oauth2/authorize?client_id=465010060284788746&scope=bot&permissions=8)', true)
+      //.addField('Source', '[Available on GitHub](https://github.com/favna/ribbon)', true)
+      .addField('Support', '[Server Invite](https://discord.gg/4eMsYmx)', true)
       .addField('Uptime', moment.duration(this.client.uptime).format('DD [days], HH [hours and] mm [minutes]'), true)
       .addField('Current server time', moment().format('MMMM Do YYYY [|] HH:mm.ss [UTC]ZZ'), false)
       .addField('\u200b', oneLine`Use the \`${msg.guild ? msg.guild.commandPrefix : this.client.commandPrefix}help\` command to get the list of commands available to you in a DM. 
             The default prefix is \`!\`. You can change this with the \`${msg.guild ? msg.guild.commandPrefix : this.client.commandPrefix}prefix\` command. 
             If you ever forget the command prefix, just use \`${this.client.user.tag} prefix\``)
-      .setFooter(`Ribbon | ${moment().format('MMMM Do YYYY [at] HH:mm:ss [UTC]Z')}`, 'https://favna.xyz/images/appIcons/ribbon.png');
+      .setFooter(`Clara | ${moment().format('MMMM Do YYYY [at] HH:mm:ss [UTC]Z')}`);
 
     deleteCommandMessages(msg, this.client);
     stopTyping(msg);
