@@ -24,7 +24,7 @@ class Ribbon {
         status: 'online',
         activity: {
           application: '465010060284788746',
-          name: '@Clara help',
+          name: '@Clara Alpha help',
           type: 'WATCHING',
           details: 'Made by Jimmy',
          /* state: 'https://favna.xyz/ribbon',
