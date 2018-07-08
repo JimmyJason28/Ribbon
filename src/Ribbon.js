@@ -16,7 +16,7 @@ class Ribbon {
   constructor (token) {
     this.token = token;
     this.client = new Client({
-      commandPrefix: 'c!',
+      commandPrefix: 'c.',
       owner: '402316460325601292',
       selfbot: false,
       unknownCommandResponse: false,
