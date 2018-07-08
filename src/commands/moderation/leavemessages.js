@@ -21,7 +21,7 @@ module.exports = class LeaveMessagesCommand extends Command {
       memberName: 'leavemessages',
       group: 'moderation',
       aliases: ['lmt', 'leavemessagestoggle'],
-      description: 'Toggle whether Ribbon should send special leave messages when members leave',
+      description: 'Toggle whether Clara should send special leave messages when members leave',
       format: 'BooleanResolvable  [Channel]',
       examples: ['leavemessages enable'],
       guildOnly: true,
@@ -66,7 +66,7 @@ module.exports = class LeaveMessagesCommand extends Command {
 
     startTyping(msg);
     const defRoleEmbed = new MessageEmbed(),
-      description = option ? '📉 Ribbon leave messages have been enabled' : '📉 Ribbon leave messages have been disabled',
+      description = option ? '📉 Clara leave messages have been enabled' : '📉 Clara leave messages have been disabled',
       modlogChannel = msg.guild.settings.get('modlogchannel',
         msg.guild.channels.find(c => c.name === 'mod-logs') ? msg.guild.channels.find(c => c.name === 'mod-logs').id : null);
     
